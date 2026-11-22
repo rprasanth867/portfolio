@@ -32,8 +32,9 @@ export default function Hero() {
         </p>
 
         <h1 id="hero-title" className="hero__title reveal in">
+          <span className="hero__name-prefix">{personalInfo.namePrefix}</span>
           <span className="line">
-            <span className="word">Nikhil</span> <span className="word grad">Kumar</span>
+            <span className="word">{personalInfo.firstName}</span>{" "}<span className="word grad">{personalInfo.lastName}</span>
           </span>
         </h1>
 
@@ -46,14 +47,14 @@ export default function Hero() {
         </p>
 
         <div className="hero__cta reveal in">
-          <a href="#work" className="btn btn--primary magnetic">
-            View my work
+          <a href="#stack" className="btn btn--primary magnetic">
+            View my stack
             <svg className="ico" viewBox="0 0 24 24" aria-hidden="true">
               <path d="M5 12h14M13 6l6 6-6 6" />
             </svg>
           </a>
-          <a href={personalInfo.resumeUrl} className="btn btn--ghost magnetic" target="_blank" rel="noopener noreferrer">
-            Download résumé
+          <a href={personalInfo.resumeUrl} className="btn btn--ghost magnetic" download={personalInfo.resumeFileName}>
+            Download Resume
             <svg className="ico" viewBox="0 0 24 24" aria-hidden="true">
               <path d="M12 4v12M6 12l6 6 6-6M4 20h16" />
             </svg>
@@ -90,33 +91,32 @@ export default function Hero() {
       <div className="hero__visual reveal in" aria-hidden="true">
         <div className="hero__card" ref={heroCardRef}>
           <div className="hero__card-glow" aria-hidden="true" />
-          <div className="term" role="img" aria-label="Terminal showing a real-time trading service starting up">
+          <div className="term" role="img" aria-label="Terminal showing a technical stack summary starting up">
             <div className="term__bar">
               <span className="dot dot--r" aria-hidden="true" />
               <span className="dot dot--y" aria-hidden="true" />
               <span className="dot dot--g" aria-hidden="true" />
-              <span className="term__title mono">nikhil@indore — services</span>
+              <span className="term__title mono">{personalInfo.brandName}@{personalInfo.city.toLowerCase()} — services</span>
             </div>
             <div className="term__body mono">
               <div><span className="t-p">$</span> npm run start:prod</div>
-              <div className="t-dim">[Nest] bootstrapping application…</div>
-              <div><span className="t-ok">✓</span> redis        <span className="t-dim">connected · cache warm</span></div>
-              <div><span className="t-ok">✓</span> mongodb      <span className="t-dim">pool 10 · indexes ok</span></div>
-              <div><span className="t-ok">✓</span> rabbitmq     <span className="t-dim">6 consumers · dlq armed</span></div>
-              <div><span className="t-ok">✓</span> socket.io    <span className="t-dim">/public /private</span></div>
-              <div><span className="t-ok">✓</span> fix-parser   <span className="t-dim">crypto.com feed live</span></div>
-              <div><span className="t-ok">✓</span> limitless    <span className="t-dim">markets synced · orders armed</span></div>
-              <div><span className="t-ok">✓</span> privy        <span className="t-dim">eoa + custodial wallets</span></div>
+              <div className="t-dim">[app] bootstrapping services…</div>
+              <div><span className="t-ok">✓</span> react-native <span className="t-dim">design system · 30+ components</span></div>
+              <div><span className="t-ok">✓</span> nextjs       <span className="t-dim">SSR · SEO optimized</span></div>
+              <div><span className="t-ok">✓</span> nodejs       <span className="t-dim">REST APIs · Express · MySQL</span></div>
+              <div><span className="t-ok">✓</span> websocket    <span className="t-dim">real-time · XMPP · SSE</span></div>
+              <div><span className="t-ok">✓</span> mongodb      <span className="t-dim">document store · indexes ok</span></div>
+              <div><span className="t-ok">✓</span> redis        <span className="t-dim">cache · session store</span></div>
+              <div><span className="t-ok">✓</span> docker       <span className="t-dim">containerized · CI/CD</span></div>
               <div aria-hidden="true"> </div>
-              <div><span className="t-key">feed</span>  <span className="t-dim">BTC-USD</span>  <span className="t-ok">▲ 0.42%</span>  <span className="t-dim">12ms</span></div>
-              <div><span className="t-key">order</span> <span className="t-dim">accepted → limitless · filled</span></div>
+              <div><span className="t-key">startup</span> <span className="t-dim">35% faster · 5+ enterprise apps</span></div>
               <div aria-hidden="true"> </div>
               <div><span className="t-ok">▶ ready</span> <span className="t-dim">on :4000 — 0 errors</span><span className="term__cursor" aria-hidden="true" /></div>
             </div>
           </div>
           <div className="hero__card-frame" aria-hidden="true" />
-          <div className="hero__chip hero__chip--1"><b>3+</b> yrs shipping</div>
-          <div className="hero__chip hero__chip--2"><b>40%</b> faster APIs</div>
+          <div className="hero__chip hero__chip--1"><b>4+</b> yrs shipping</div>
+          <div className="hero__chip hero__chip--2"><b>35%</b> faster startup</div>
         </div>
         <a href="#top" className="hero__scroll" aria-hidden="true">
           <span />

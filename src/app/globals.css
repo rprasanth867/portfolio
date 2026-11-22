@@ -487,10 +487,14 @@ img {
   transition: transform .35s var(--ease);
 }
 
+.btn:hover {
+  transform: translateY(-3px);
+}
+
 .btn--primary {
   background: var(--gradient);
   color: rgb(5, 6, 10);
-  border-color: transparent;
+  border: none;
   box-shadow: 0 10px 30px -10px rgba(103, 232, 249, 0.55);
 }
 
@@ -562,15 +566,30 @@ img {
 }
 
 .hero__title {
-  font-size: clamp(3rem, 8.2vw, 6.2rem);
+  font-size: clamp(1.1rem, 6.5cqi, 2.8rem);
   line-height: 0.98;
   font-weight: 800;
   letter-spacing: -0.045em;
   margin-bottom: 12px;
 }
 
+.hero__name-prefix {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--text-soft);
+  font-size: 0.42em;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  line-height: 1.2;
+}
+
+.hero__inner {
+  container-type: inline-size;
+}
+
 .hero__title .line {
   display: block;
+  white-space: nowrap;
   overflow: hidden;
   padding-bottom: 0.08em;
 }
@@ -662,7 +681,7 @@ img {
 .hero__socials a:hover {
   color: rgb(5, 6, 10);
   background: var(--gradient);
-  border-color: transparent;
+  border: none;
   transform: translateY(-4px);
   box-shadow: 0 12px 26px -10px rgba(103, 232, 249, 0.6);
 }
@@ -903,7 +922,7 @@ img {
   align-items: center;
   gap: 26px;
   width: max-content;
-  animation: scrollx 42s linear infinite;
+  animation: scrollx 70s linear infinite;
 }
 
 .marquee:hover .marquee__track {
@@ -923,6 +942,7 @@ img {
 }
 
 .marquee__track i {
+  margin-left: 26px;
   color: var(--violet);
   font-style: normal;
   font-size: 0.6rem;
@@ -1126,6 +1146,38 @@ img {
 .timeline__card:hover {
   border-color: var(--border-strong);
   background: var(--surface-hover);
+}
+
+.experience__company {
+  padding-bottom: 18px;
+  border-bottom: 1px solid var(--border);
+}
+
+.experience__company h3,
+.experience__role h4 {
+  font-size: 1.2rem;
+  font-weight: 650;
+  letter-spacing: -0.02em;
+}
+
+.experience__company p,
+.education__location,
+.education__period {
+  color: var(--text-faint);
+  font-size: 0.82rem;
+}
+
+.experience__role {
+  padding-top: 22px;
+}
+
+.experience__role + .experience__role {
+  margin-top: 24px;
+  border-top: 1px solid var(--border);
+}
+
+.experience__role h4 {
+  margin-bottom: 4px;
 }
 
 .timeline__meta {
@@ -1334,10 +1386,7 @@ img {
 
 .proj--feature {
   grid-column: 1 / -1;
-  display: grid;
-  grid-template-columns: 1.25fr 0.75fr;
-  gap: 36px;
-  align-items: center;
+  display: block;
   padding: 40px;
 }
 
@@ -1350,90 +1399,6 @@ img {
   border-color: rgba(167, 139, 250, 0.45);
   color: var(--violet);
   background: rgba(167, 139, 250, 0.08);
-}
-
-.proj__art {
-  border-radius: var(--radius);
-  border: 1px solid var(--border);
-  background: linear-gradient(160deg, rgba(103, 232, 249, 0.07), rgba(167, 139, 250, 0.05));
-  padding: 22px;
-  display: grid;
-  gap: 18px;
-}
-
-.ticker {
-  display: grid;
-  gap: 10px;
-}
-
-.ticker__row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 14px;
-  border-radius: 11px;
-  background: rgba(5, 6, 10, 0.55);
-  border: 1px solid var(--border);
-  font-family: var(--font-mono), monospace;
-  font-size: 0.78rem;
-  color: var(--text-soft);
-  animation: tickFade 4s ease-in-out infinite;
-}
-
-.ticker__row:nth-child(2) {
-  animation-delay: 0.5s;
-}
-
-.ticker__row:nth-child(3) {
-  animation-delay: 1s;
-}
-
-.ticker__row:nth-child(4) {
-  animation-delay: 1.5s;
-}
-
-@keyframes tickFade {
-  50% {
-    border-color: rgba(103, 232, 249, 0.35);
-  }
-}
-
-.ticker__row .up {
-  color: rgb(52, 211, 153);
-}
-
-.ticker__row .down {
-  color: rgb(251, 113, 133);
-}
-
-.ticker__row .mono {
-  color: var(--cyan);
-}
-
-.spark {
-  width: 100%;
-  height: 80px;
-}
-
-.spark__line {
-  fill: none;
-  stroke: var(--cyan);
-  stroke-width: 2;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  filter: drop-shadow(0 0 6px rgba(103, 232, 249, 0.6));
-  stroke-dasharray: 420;
-  stroke-dashoffset: 420;
-  animation: draw 3.2s var(--ease) infinite;
-}
-
-@keyframes draw {
-  0% {
-    stroke-dashoffset: 420;
-  }
-  55%, 100% {
-    stroke-dashoffset: 0;
-  }
 }
 
 .stack {
@@ -1834,6 +1799,9 @@ a.post:hover {
 @media (max-width: 760px) {
   html {
     scroll-padding-top: 80px;
+  }
+  .hero__title {
+    font-size: clamp(1.9rem, 9.5cqi, 3.1rem);
   }
   .nav__burger {
     display: block;

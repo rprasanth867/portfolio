@@ -1,11 +1,7 @@
-const marqueeItems = [
-  "TypeScript", "Node.js", "NestJS", "React", "Next.js", "RabbitMQ", "Socket.IO", "Redis", "MongoDB", "PostgreSQL",
-  "Docker", "AWS", "FIX Protocol", "Web3", "Privy", "WalletConnect", "OpenAI", "DeepSeek", "Claude Code",
-  "Pronostyx", "Viacation", "Travel Deals", "Strike A Pose", "Peanut Butter", "Slido Clone",
-  "TypeScript", "Node.js", "NestJS", "React", "Next.js", "RabbitMQ", "Socket.IO", "Redis", "MongoDB", "PostgreSQL",
-  "Docker", "AWS", "FIX Protocol", "Web3", "Privy", "WalletConnect", "OpenAI", "DeepSeek", "Claude Code",
-  "Pronostyx", "Viacation", "Travel Deals", "Strike A Pose", "Peanut Butter", "Slido Clone",
-];
+import { stack } from "@/lib/data";
+
+const skills = stack.flatMap((group) => group.items);
+const marqueeItems = [...skills, ...skills];
 
 export default function Marquee() {
   return (
@@ -14,7 +10,7 @@ export default function Marquee() {
         {marqueeItems.map((item, index) => (
           <span key={index}>
             {item}
-            <i>▸</i>
+            <i>◆</i>
           </span>
         ))}
       </div>

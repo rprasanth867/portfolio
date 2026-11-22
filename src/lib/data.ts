@@ -1,289 +1,208 @@
 export const personalInfo = {
-  name: "Nikhil Kumar",
-  title: "Full Stack Engineer",
-  tagline: "Full stack engineer with 3+ years building scalable web applications — prediction-market and trading integrations, event-driven architectures, FIX protocol pipelines, Web3 wallet flows and AI integrations that actually ship.",
-  location: "Indore, India · IST",
-  email: "vashishtnikhil158@gmail.com",
-  phone: "+91 62824 85857",
-  github: "mishranikhil15",
-  linkedin: "nikhil-mishra",
-  githubUrl: "https://github.com/mishranikhil15",
-  linkedinUrl: "https://linkedin.com/in/nikhil-mishra",
-  emailUrl: "mailto:vashishtnikhil158@gmail.com",
-  phoneUrl: "tel:+916282485857",
-  resumeUrl: "/resume.pdf",
+  name: "V V N Durga Prasanth Rudrakshula",
+  namePrefix: "V V N Durga",
+  firstName: "Prasanth",
+  lastName: "Rudrakshula",
+  brandName: "prasanth",
+  brandDomain: ".dev",
+  brandInitial: "P",
+  city: "Bangalore",
+  title: "Senior Software Engineer (SDE-2)",
+  targetRoles: ["Senior Software Engineer (SDE-2)", "Mobile Full Stack Developer"],
+  preferredLocations: ["Bengaluru", "Hyderabad", "Chennai"],
+  employmentType: "full-time",
+  roles: [
+    "Senior Software Engineer (SDE-2)",
+    "Mobile Full Stack Developer",
+    "React Native Developer",
+    "React.js Developer"
+  ],
+  tagline: "Senior Software Engineer with 4+ years of experience building high-performance mobile and web applications with React Native, React, Next.js, TypeScript, and Node.js. Focused on reusable design systems, cross-platform architecture, and real-time communications.",
+  location: "Bangalore, India",
+  email: "rprasanth867@gmail.com",
+  phone: "+91 9985702662",
+  github: "rprasanth867",
+  linkedin: "prasanth-rudrakshula",
+  githubUrl: "https://github.com/rprasanth867",
+  linkedinUrl: "https://www.linkedin.com/in/prasanth-rudrakshula/",
+  emailUrl: "mailto:rprasanth867@gmail.com",
+  phoneUrl: "tel:+919985702662",
+  resumeUrl: "/Prasanth_resume_rn.pdf",
+  resumeFileName: "Prasanth_resume_rn.pdf",
   availability: "Available for new opportunities",
-  about: "I build the parts of a product that have to stay up — APIs, queues, sockets and the data paths behind them.",
+  about: "I build mobile and web products with React Native, React, Next.js, and Node.js, with a focus on reusable architecture, fast experiences, and reliable real-time communication.",
   aboutDetails: [
-    "Most of my recent work sits in real-time systems: the backend behind Pronostyx, a prediction market platform, where I integrated Limitless Exchange as the execution venue — building the order-payload, wallet and market-data layer around it — plus a custom FIX protocol parser ingesting live data from Crypto.com and event-driven pipelines held together with RabbitMQ, circuit breakers and dead-letter queues.",
-    "Before that I spent two years on full-stack product work — React and Redux on the front, Node.js, NestJS and Express behind it — with a habit of chasing down slow queries and caching the right things.",
-    "I studied B.Tech at Cochin University of Science and Technology and went through Masai School's full-time full-stack program. These days I lean heavily on AI tooling — OpenAI, DeepSeek and Claude Code — as part of how I build."
+    "At Nouveau Labs, I built and maintained a React Native design system with more than 30 reusable components used across five or more enterprise apps. I also improved app startup time by 35% through Hermes migration, lazy loading, and code splitting.",
+    "I have delivered cross-platform messaging and offline-first experiences using WebSockets, XMPP, Server-Sent Events, polling, and WatermelonDB. My work includes background sync, responsive state management, and secure session and local storage flows.",
+    "I also build full-stack web features and Node.js/Express REST APIs, including authentication with JWT, OAuth 2.0, API keys, SSO, and role-based access control. I take features through design, implementation, testing, review, deployment, and production support."
   ],
   focusAreas: [
-    "Real-time systems",
-    "Trading & market integrations",
-    "Event-driven architecture",
-    "API design",
-    "Performance tuning",
-    "Web3 integration",
-    "AI integration"
+    "React Native",
+    "Cross-platform apps",
+    "Design systems",
+    "Real-time messaging",
+    "React & Next.js",
+    "Node.js APIs",
+    "Application performance"
   ],
   stats: [
-    { label: "Years of experience", value: "3+" },
-    { label: "API performance gain", value: "40%" },
-    { label: "Latency cut with Redis", value: "35%" },
-    { label: "Manual effort automated", value: "60%" }
+    { label: "Years of experience", value: "4+" },
+    { label: "Reusable UI components", value: "30+" },
+    { label: "Enterprise apps using design system", value: "5+" },
+    { label: "Faster app startup", value: "35%" }
   ]
 };
 
 export const experience = [
   {
-    id: "trueigtech",
-    current: true,
-    period: "Jan 2026 — Present",
-    role: "Software Engineer",
-    company: "Trueigtech",
-    location: "Indore, India",
-    description: "Built the backend for Pronostyx, a prediction market platform, integrating Limitless Exchange for market data and order execution.",
-    highlights: [
-      "Owned the order-placement flow: validation, payload construction, submission to Limitless and reconciling responses back into user positions.",
-      "Wrote a FIX protocol parser mapping live market data from Crypto.com.",
-      "Integrated Privy for dual wallet auth (EOA + custodial) with JWT sessions.",
-      "Shipped an event-driven RabbitMQ pipeline with circuit breakers, DLQs and retries."
+    id: "nouveau-labs",
+    company: "Nouveau Labs",
+    employment: "Full-time · 4+ years",
+    arrangement: "On-site",
+    location: "Bengaluru, Karnataka, India",
+    roles: [
+      {
+        id: "senior-software-engineer",
+        current: true,
+        period: "Jun 2026 — Present",
+        title: "Senior Software Engineer",
+        location: "Bengaluru, Karnataka, India",
+        highlights: [
+          "Built and maintained a reusable design system library with 30+ UI components, used across 5+ enterprise applications.",
+          "Improved React Native app startup time by 35% through Hermes migration, lazy loading, and code splitting.",
+          "Developed offline messaging using WatermelonDB and real-time communication features using WebSockets, XMPP, and SSE.",
+          "Integrated AI-powered Copilot features and developed REST APIs using Node.js, Express.js, and MySQL.",
+          "Implemented security features including secure storage, CAPTCHA, account lockout, and CORS restrictions.",
+          "Mentored junior developers and received the Rising Star Award (2024) and Star Award (2025)."
+        ],
+        technologies: ["React Native", "React.js", "TypeScript", "WatermelonDB", "WebSockets", "XMPP", "SSE", "Node.js", "Express.js", "MySQL"]
+      },
+      {
+        id: "software-engineer",
+        current: false,
+        period: "Nov 2022 — Jun 2026",
+        title: "Software Engineer",
+        location: "Bengaluru, India",
+        highlights: [
+          "Built and integrated REST APIs using Node.js, Express.js, and MySQL, and worked with MongoDB and Redis for data management and caching.",
+          "Developed real-time communication features using WebSockets, XMPP, SSE, long polling, and short polling.",
+          "Implemented authentication and authorization using JWT, OAuth 2.0, API keys, SDK keys, and SSO.",
+          "Built an SEO-friendly landing page using Next.js, server-side rendering, and metadata optimization.",
+          "Improved application performance through lazy loading, code splitting, memoization, and render optimization; contributed to testing, code reviews, debugging, and production support."
+        ],
+        technologies: ["React Native", "React.js", "Next.js", "Node.js", "Express.js", "MySQL", "MongoDB", "Redis", "WebSockets", "XMPP", "SSE"]
+      }
     ],
-    technologies: ["Node.js", "Socket.IO", "RabbitMQ", "FIX", "Privy", "Web3"]
-  },
-  {
-    id: "hawk-martech",
-    current: false,
-    period: "Apr 2025 — Dec 2025",
-    role: "Software Engineer",
-    company: "Hawk Martech",
-    location: "Gurgaon, India",
-    description: "Built scalable backend services using NestJS and Express.",
-    highlights: [
-      "Implemented Redis caching, cutting average response latency by 35%.",
-      "Added logging dashboards that made debugging far faster.",
-      "Optimized MySQL and MongoDB queries, improving API performance by 40%."
-    ],
-    technologies: ["NestJS", "Redis", "MySQL", "MongoDB", "Grafana"]
-  },
-  {
-    id: "hana-software",
-    current: false,
-    period: "Aug 2023 — Apr 2025",
-    role: "Associate Software Engineer",
-    company: "Hana Software (USA)",
-    location: "Remote",
-    description: "Built full-stack web apps using React, Redux, Ant Design and Node.js.",
-    highlights: [
-      "Developed secure REST APIs with authentication and WebSocket support.",
-      "Automated workflows with Puppeteer, cutting manual effort by 60%.",
-      "Improved MongoDB performance through schema redesign and indexing."
-    ],
-    technologies: ["React", "Redux", "Node.js", "Puppeteer", "MongoDB"]
   }
 ];
 
 export const education = [
   {
-    id: "masai",
-    institution: "Masai School",
-    degree: "Full Stack Web Development, full time",
-    period: "Aug 2022 – Jul 2023",
-    location: "Bengaluru"
+    id: "nxtwave",
+    institution: "NxtWave",
+    degree: "Full Stack Development",
+    period: "2021 — 2022",
+    location: "Hyderabad, India"
   },
   {
-    id: "cusat",
-    institution: "Cochin University of Science and Technology",
-    degree: "B.Tech",
-    period: "2015 – 2019",
-    location: "Kochi"
+    id: "adikavi-nannaya-university",
+    institution: "Adikavi Nannaya University",
+    degree: "MBA, Human Resource Management",
+    period: "2019 — 2021",
+    location: "Rajamahendravaram, India"
   }
 ];
 
 export const projects = [
   {
-    id: "pronostyx",
+    id: "enterprise-design-system",
     featured: true,
-    title: "Pronostyx",
-    subtitle: "Prediction market platform · Limitless Exchange integration",
-    description: "The platform layer around a live prediction market. Limitless Exchange owns the orderbook and matching — my work was everything that talks to it: validating requests, building and signing order payloads, submitting them, and reconciling responses into user positions and market-resolution claim flows.",
+    title: "Enterprise Design System",
+    subtitle: "Cross-platform UI engine · Nouveau Labs",
+    description: "A reusable React Native design system packaged for use across enterprise applications, built to improve UI consistency and reduce repeated implementation work.",
     points: [
-      "Six services (Next.js frontend, Express backends, data-consumer, job scheduler) synchronised over RabbitMQ",
-      "Custom FIX protocol parser ingesting real-time Crypto.com market data",
-      "Socket.IO namespaces split by auth level — public orderbook feed vs. per-user portfolio",
-      "Privy wallet integration: dual EOA + custodial flows on Base Mainnet",
-      "Circuit breakers, dead-letter queues and retry policies across third-party and on-chain calls"
+      "Built and maintained an NPM library with 30+ reusable UI components",
+      "Adopted across 5+ enterprise applications",
+      "Improved React Native startup time by 35% through Hermes migration, lazy loading, and code splitting"
     ],
-    technologies: ["Node.js", "Next.js", "Socket.IO", "Redis", "RabbitMQ", "FIX Protocol", "Privy", "Base Mainnet"],
+    technologies: ["React Native", "TypeScript", "NPM", "Storybook", "i18n"],
     links: []
   },
   {
-    id: "viacation",
+    id: "dolphincc",
     featured: false,
-    title: "Viacation",
-    subtitle: "Travel booking platform",
-    description: "Catalog, booking and routing services with Redis-based caching for response time, plus Redis-driven rate limiting on login and API endpoints to stop abuse.",
-    points: [],
-    technologies: ["NestJS", "Redis", "Docker", "MongoDB"],
+    title: "DolphinCC",
+    subtitle: "Cross-platform contact-center application",
+    description: "Built offline-first messaging and real-time communication features for contact-center workflows across mobile and web.",
+    points: [
+      "Implemented offline storage and background synchronization with WatermelonDB",
+      "Built messaging with WebSockets, XMPP, Server-Sent Events, and polling",
+      "Integrated an AI-powered Copilot and improved UI responsiveness through state management and render optimization"
+    ],
+    technologies: ["React Native", "React.js", "Redux Toolkit", "WatermelonDB", "WebSockets", "XMPP", "SSE"],
     links: []
   },
   {
-    id: "travel-deals",
+    id: "dolphinvc",
     featured: false,
-    title: "Travel Deals Online",
-    subtitle: "Partner-integrated travel APIs",
-    description: "REST APIs for travel search, pricing and partner integrations. External provider APIs for offers and booking data, on MySQL schemas tuned for fast retrieval.",
-    points: [],
-    technologies: ["Express.js", "MySQL", "JavaScript", "3rd-party APIs"],
+    title: "DolphinVC",
+    subtitle: "Full-stack web platform",
+    description: "Developed secure authentication flows, REST APIs, and an SEO-focused landing page for a full-stack web product.",
+    points: [
+      "Implemented JWT, OAuth 2.0, API key, SDK key, SSO, and RBAC authentication flows",
+      "Built REST APIs with Node.js, Express.js, and MySQL",
+      "Created a Next.js landing page with server-side rendering and metadata optimization"
+    ],
+    technologies: ["React.js", "Next.js", "Node.js", "Express.js", "MySQL"],
     links: []
-  },
-  {
-    id: "strike-a-pose",
-    featured: false,
-    title: "Strike A Pose",
-    subtitle: "Booking & appointment system",
-    description: "Photography appointment scheduling — users book a slot and track editing and delivery.",
-    points: [],
-    technologies: ["Node.js", "Express", "MongoDB"],
-    links: [
-      { label: "Code ↗", url: "#" },
-      { label: "Live ↗", url: "#" }
-    ]
-  },
-  {
-    id: "peanut-butter",
-    featured: false,
-    title: "Peanut Butter",
-    subtitle: "Full-stack e-commerce",
-    description: "Product storefront with JWT auth, bcrypt hashing and a MongoDB-backed Express API.",
-    points: [],
-    technologies: ["Node.js", "Express", "JWT", "MongoDB"],
-    links: [
-      { label: "Code ↗", url: "#" },
-      { label: "Live ↗", url: "#" }
-    ]
-  },
-  {
-    id: "slido-clone",
-    featured: false,
-    title: "Slido Clone",
-    subtitle: "Live audience interaction",
-    description: "Real-time polls, quizzes and Q&A over Socket.IO for live events.",
-    points: [],
-    technologies: ["Socket.io", "Express", "JavaScript"],
-    links: [
-      { label: "Code ↗", url: "#" },
-      { label: "Live ↗", url: "#" }
-    ]
   }
 ];
 
 export const stack = [
   {
     id: "languages",
-    title: "01 Languages & Frameworks",
-    items: ["TypeScript", "JavaScript", "Node.js", "NestJS", "Express", "React", "Next.js", "Redux", "GraphQL"]
+    title: "01 Languages",
+    items: ["TypeScript", "JavaScript", "Python", "Java"]
   },
   {
-    id: "data",
-    title: "02 Data",
-    items: ["MongoDB", "MySQL", "PostgreSQL", "Redis"]
+    id: "mobile-web",
+    title: "02 Mobile & Web",
+    items: ["React Native", "React.js", "Next.js", "Redux Toolkit", "React Query", "Axios", "GraphQL", "HTML5", "CSS3", "Micro-frontends"]
+  },
+  {
+    id: "native",
+    title: "03 React Native",
+    items: ["React Native CLI", "Expo", "React Navigation", "Native Modules Bridge", "WatermelonDB", "Crashlytics", "Async Storage", "Hermes", "Fabric", "JSI", "TurboModules"]
+  },
+  {
+    id: "backend-data",
+    title: "04 Backend & Data",
+    items: ["Node.js", "Express.js", "REST APIs", "MySQL", "Redis", "MongoDB"]
   },
   {
     id: "realtime",
-    title: "03 Real-time & Messaging",
-    items: ["Socket.IO", "WebSockets", "RabbitMQ", "FIX Protocol"]
+    title: "05 Real-time Communication",
+    items: ["WebSockets", "XMPP", "Server-Sent Events", "Long Polling", "Short Polling"]
   },
   {
-    id: "blockchain-ai",
-    title: "04 Blockchain & AI",
-    items: ["Privy", "WalletConnect", "Custodial wallets", "OpenAI APIs", "DeepSeek", "Claude Code"]
+    id: "cloud",
+    title: "06 Cloud & Delivery",
+    items: ["AWS EC2", "AWS S3", "CloudFront", "Docker", "CI/CD", "Pipelines"]
   },
   {
-    id: "cloud-devops",
-    title: "05 Cloud, DevOps & Observability",
-    items: ["AWS", "GCP", "Docker", "Grafana", "CI/CD", "GitHub Actions"]
+    id: "testing-ai",
+    title: "07 Testing",
+    items: ["Jest", "Vitest", "React Testing Library", "React Native Testing Library", "Playwright", "MSW"]
   },
   {
-    id: "tooling",
-    title: "06 Tooling",
-    items: ["Git", "Postman", "Jira", "Notion", "VS Code"]
-  }
-];
-
-export const githubStats = {
-  publicRepos: 66,
-  starsEarned: 12,
-  followers: 110,
-  topLanguage: "JavaScript",
-  languageBreakdown: [
-    { name: "JavaScript", percentage: "72.0%" },
-    { name: "HTML", percentage: "27.0%" },
-    { name: "Python", percentage: "0.8%" },
-    { name: "TypeScript", percentage: "0.2%" }
-  ],
-  recentRepos: [
-    { name: "mishranikhil15", description: "No description", stars: 0, language: null },
-    { name: "mishranikhil15.github.io", description: "No description", stars: 1, language: "HTML" },
-    { name: "Progressive-Student-Dashboard-Full-Stack-", description: "No description", stars: 0, language: "JavaScript" },
-    { name: "Harij-Softech", description: "No description", stars: 0, language: "TypeScript" }
-  ],
-  lastUpdated: "21/12/2025"
-};
-
-export const blogPosts = [
-  {
-    id: "rest-vs-websockets-vs-sse",
-    date: "15 Jul 2026",
-    title: "REST vs WebSockets vs SSE: which one do you actually need?",
-    excerpt: "Most people jump straight from REST to WebSockets and skip the option in the middle. Server-Sent Events is simpler, and for a lot of features it is the right answer.",
-    tags: ["REST", "WebSockets", "SSE"],
-    url: "#",
-    draft: false
-  },
-  {
-    id: "sitemaps-canonical-tags",
-    date: "2 Sept 2025",
-    title: "Sitemaps and canonical tags: the two SEO things developers own",
-    excerpt: "Most SEO is someone else's job. These two live in your code, take an afternoon, and getting them wrong quietly splits your rankings across duplicate URLs.",
-    tags: ["SEO", "Sitemap", "Canonical"],
-    url: "#",
-    draft: false
-  },
-  {
-    id: "nestjs-vs-express",
-    date: "28 Aug 2025",
-    title: "NestJS vs Express: which one should you pick?",
-    excerpt: "Express gives you a blank page. NestJS gives you a filled-in form — and if you know Spring Boot, it will feel familiar. Covers dependency injection, DTO validation, SOLID, and swapping Express for Fastify underneath.",
-    tags: ["Node.js", "NestJS", "Spring Boot", "DTOs", "Fastify"],
-    url: "#",
-    draft: false
-  },
-  {
-    id: "postgresql-vs-mongodb",
-    date: "24 Aug 2025",
-    title: "PostgreSQL vs MongoDB: how to actually choose",
-    excerpt: "Not \"SQL vs NoSQL\". The real question is whether you read your data whole or combine it in ways you cannot predict. Plus the myths that waste everyone's time.",
-    tags: ["PostgreSQL", "MongoDB", "Databases"],
-    url: "#",
-    draft: false
-  },
-  {
-    id: "why-message-queue-rabbitmq",
-    date: "28 Jul 2025",
-    title: "Why add a message queue? RabbitMQ explained simply",
-    excerpt: "A queue is just a shared to-do list between services. What problem it solves, the three settings that stop it losing work, and when you do not need one.",
-    tags: ["RabbitMQ", "Architecture"],
-    url: "#",
-    draft: false
+    id: "ai-tools",
+    title: "08 AI Tools",
+    items: ["CopilotKit", "MCP", "Skills", "Claude", "Cursor", "GitHub Copilot"]
   }
 ];
 
 export const footer = {
-  copyright: "2026 Nikhil Kumar — Indore, India",
-  visitsLabel: "visits"
+  copyrightYear: "2026"
 };
 
 export const navItems = [
@@ -292,6 +211,5 @@ export const navItems = [
   { label: "Experience", href: "#experience" },
   { label: "Work", href: "#work" },
   { label: "Stack", href: "#stack" },
-  { label: "Blog", href: "#blog" },
   { label: "Contact", href: "#contact" }
 ];

@@ -12,7 +12,7 @@ export default function Contact() {
       <div className="contact">
         <h3 className="contact__big">Let&apos;s build something fast.</h3>
         <p className="contact__note">
-          Open to backend and full-stack roles, especially anything real-time, event-driven or trading-adjacent.
+          Open to {personalInfo.targetRoles.join(" and ")} roles, with {personalInfo.employmentType} opportunities in {personalInfo.preferredLocations.join(", ")} or remote.
         </p>
 
         <div className="contact__grid" role="list" aria-label="Contact methods">

@@ -1,13 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-
-const roles = [
-  "Full Stack Engineer",
-  "React Developer",
-  "Node.js Specialist",
-  "Problem Solver",
-];
+import { personalInfo } from "@/lib/data";
 
 export default function TypedText() {
   const [text, setText] = useState("");
@@ -15,7 +9,7 @@ export default function TypedText() {
   const [isDeleting, setIsDeleting] = useState(false);
 
   useEffect(() => {
-    const currentRole = roles[index];
+    const currentRole = personalInfo.roles[index];
     const isRoleComplete = text === currentRole;
     const delay = isDeleting ? 50 : isRoleComplete ? 1500 : 100;
 
@@ -25,7 +19,7 @@ export default function TypedText() {
           setText(text.slice(0, -1));
         } else {
           setIsDeleting(false);
-          setIndex((currentIndex) => (currentIndex + 1) % roles.length);
+          setIndex((currentIndex) => (currentIndex + 1) % personalInfo.roles.length);
         }
       } else if (isRoleComplete) {
         setIsDeleting(true);

@@ -92,8 +92,8 @@ export default function Navigation() {
   return (
     <header className={`nav ${scrolled ? "scrolled" : ""}`} id="nav">
       <a className="nav__logo" href="#home" aria-label="Home">
-        <span className="nav__logo-mark mono" aria-hidden="true">N</span>
-        <span className="nav__logo-text">nikhil<span>.dev</span></span>
+        <span className="nav__logo-mark mono" aria-hidden="true">{personalInfo.brandInitial}</span>
+        <span className="nav__logo-text">{personalInfo.brandName}<span>{personalInfo.brandDomain}</span></span>
       </a>
 
       <nav className={`nav__links ${mobileOpen ? "open" : ""}`} id="navLinks" aria-label="Primary">
@@ -114,7 +114,7 @@ export default function Navigation() {
           rel="noopener noreferrer"
           onClick={() => setMobileOpen(false)}
         >
-          Résumé
+          View Resume
           <svg className="ico" viewBox="0 0 24 24" aria-hidden="true">
             <path d="M7 17 17 7M17 7H9M17 7v8" />
           </svg>

@@ -1,14 +1,20 @@
 import type { Metadata } from "next";
+import { personalInfo } from "@/lib/data";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Nikhil Kumar — Full Stack Engineer",
-  description: "Full stack engineer with 3+ years building scalable web applications — prediction-market and trading integrations, event-driven architectures, FIX protocol pipelines, Web3 wallet flows and AI integrations that actually ship.",
+  title: `${personalInfo.firstName} ${personalInfo.lastName}`,
+  description: personalInfo.tagline,
   keywords: ["Full Stack Engineer", "Node.js", "React", "Next.js", "TypeScript", "RabbitMQ", "Web3", "FIX Protocol", "Real-time Systems"],
-  authors: [{ name: "Nikhil Kumar" }],
+  authors: [{ name: personalInfo.name }],
+  icons: {
+    icon: "/favicon.svg",
+    shortcut: "/favicon.svg",
+    apple: "/favicon.svg",
+  },
   openGraph: {
-    title: "Nikhil Kumar — Full Stack Engineer",
-    description: "Full stack engineer with 3+ years building scalable web applications",
+    title: `${personalInfo.firstName} ${personalInfo.lastName}`,
+    description: personalInfo.tagline,
     type: "website",
     locale: "en_US",
   },
@@ -35,7 +41,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           }}
         >
           <div className="preloader__inner">
-            <div className="preloader__name mono">nikhil.dev</div>
+            <div className="preloader__name mono">{personalInfo.brandName}{personalInfo.brandDomain}</div>
             <div className="preloader__bar"><i /></div>
           </div>
         </div>
