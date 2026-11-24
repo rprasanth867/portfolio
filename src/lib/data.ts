@@ -17,7 +17,7 @@ export const personalInfo = {
     "React Native Developer",
     "React.js Developer"
   ],
-  tagline: "Senior Software Engineer with 4+ years of experience building high-performance mobile and web applications with React Native, React, Next.js, TypeScript, and Node.js. Focused on reusable design systems, cross-platform architecture, and real-time communications.",
+  tagline: "Senior Software Engineer with 4+ years of experience architecting and delivering high-performance web and mobile applications using React, React Native, Next.js, TypeScript, and Redux Toolkit. Specialized in building reusable Design System Libraries (NPM packages), cross-platform application architectures, and low-latency real-time communications (WebSockets, XMPP). Proven track record of optimizing application performance, enforcing strict security standards, and delivering enterprise-grade full-stack solutions with lightweight Node.js/Express backends.",
   location: "Bangalore, India",
   email: "rprasanth867@gmail.com",
   phone: "+91 9985702662",
@@ -56,7 +56,7 @@ export const personalInfo = {
 export const experience = [
   {
     id: "nouveau-labs",
-    company: "Nouveau Labs",
+    company: "Nouveau Labs Pvt. Ltd.",
     employment: "Full-time · 4+ years",
     arrangement: "On-site",
     location: "Bengaluru, Karnataka, India",
@@ -75,7 +75,7 @@ export const experience = [
           "Implemented security features including secure storage, CAPTCHA, account lockout, and CORS restrictions.",
           "Mentored junior developers and received the Rising Star Award (2024) and Star Award (2025)."
         ],
-        technologies: ["React Native", "React.js", "TypeScript", "WatermelonDB", "WebSockets", "XMPP", "SSE", "Node.js", "Express.js", "MySQL"]
+        technologies: ["React Native", "React.js", "TypeScript", "WatermelonDB", "WebSockets", "XMPP", "SSE", "Node.js", "Express.js", "MySQL", "MongoDB", "Redis"]
       },
       {
         id: "software-engineer",
@@ -90,7 +90,7 @@ export const experience = [
           "Built an SEO-friendly landing page using Next.js, server-side rendering, and metadata optimization.",
           "Improved application performance through lazy loading, code splitting, memoization, and render optimization; contributed to testing, code reviews, debugging, and production support."
         ],
-        technologies: ["React Native", "React.js", "Next.js", "Node.js", "Express.js", "MySQL", "MongoDB", "Redis", "WebSockets", "XMPP", "SSE"]
+        technologies: ["React Native", "React.js", "TypeScript", "WatermelonDB", "WebSockets", "XMPP", "SSE", "Node.js", "Express.js", "MySQL", "Redux Toolkit", "Ant Design", "MUI", "Storybook", "NPM", "i18n"]
       }
     ],
   }
@@ -107,8 +107,8 @@ export const education = [
   {
     id: "adikavi-nannaya-university",
     institution: "Adikavi Nannaya University",
-    degree: "MBA, Human Resource Management",
-    period: "2019 — 2021",
+    degree: "B.Sc (Mathematics, Statistics)",
+    period: "2014 — 2017",
     location: "Rajamahendravaram, India"
   }
 ];
@@ -125,7 +125,7 @@ export const projects = [
       "Adopted across 5+ enterprise applications",
       "Improved React Native startup time by 35% through Hermes migration, lazy loading, and code splitting"
     ],
-    technologies: ["React Native", "TypeScript", "NPM", "Storybook", "i18n"],
+    technologies: ["React Native", "TypeScript", "NPM", "Storybook", "i18n", "MUI", "Ant Design"],
     links: []
   },
   {
@@ -135,11 +135,13 @@ export const projects = [
     subtitle: "Cross-platform contact-center application",
     description: "Built offline-first messaging and real-time communication features for contact-center workflows across mobile and web.",
     points: [
+      "Integrated an AI-powered Copilot enabling context-aware interactions and natural language assistance",
       "Implemented offline storage and background synchronization with WatermelonDB",
-      "Built messaging with WebSockets, XMPP, Server-Sent Events, and polling",
-      "Integrated an AI-powered Copilot and improved UI responsiveness through state management and render optimization"
+      "Built messaging with WebSockets, XMPP, Server-Sent Events, Long Polling, and Short Polling",
+      "Established robust session management, secure local storage, CAPTCHA, account lockout, and CORS whitelisting",
+      "Reduced unnecessary React re-renders through refined state management and memoization"
     ],
-    technologies: ["React Native", "React.js", "Redux Toolkit", "WatermelonDB", "WebSockets", "XMPP", "SSE"],
+    technologies: ["React Native", "React.js", "Redux Toolkit", "WatermelonDB", "WebSockets", "XMPP", "SSE", "Ant Design"],
     links: []
   },
   {

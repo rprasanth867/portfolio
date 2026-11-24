@@ -42,9 +42,7 @@ export default function Hero() {
           <span className="mono">{'>'}</span> <TypedText /><span className="caret" aria-hidden="true">_</span>
         </p>
 
-        <p className="hero__blurb reveal in">
-          {personalInfo.tagline}
-        </p>
+        <p className="hero__blurb reveal in">{personalInfo.tagline}</p>
 
         <div className="hero__cta reveal in">
           <a href="#stack" className="btn btn--primary magnetic">
