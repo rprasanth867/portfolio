@@ -53,9 +53,9 @@ ___
 <div style="height:10px"></div>
 
 
-![alt text](react/assets/image.png)
+![alt text](assets/image.png)
 
-<div align="center"><img src="react/assets/image.png" alt="alt text" style="max-width: 500px; width: 100%"></div>
+<div align="center"><img src="assets/image.png" alt="alt text" style="max-width: 500px; width: 100%"></div>
 
 
 > **☠️ Pitfall**  

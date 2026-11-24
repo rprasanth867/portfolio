@@ -64,9 +64,9 @@ Use `@slot` for named slots rendered by a parent layout. Use intercept patterns 
 
 ### Component hierarchy
 
-![alt text](/assets/nextjs-component-hierarchy-1.png)
+![alt text](../assets/nextjs-component-hierarchy-1.png)
 
-![alt text](/assets/nextjs-component-hierarchy-2.png)
+![alt text](../assets/nextjs-component-hierarchy-2.png)
 
 
 ### Colocation
@@ -84,7 +84,7 @@ This means that project files can be safely colocated inside route segments in t
 
 Next.js supports storing application code (including app) inside an optional `src` folder. This separates application code from project configuration files which mostly live in the root of a project.
 
-![alt text](/assets/nextjs-src-folder.png)
+![alt text](../assets/nextjs-src-folder.png)
 
 
 ### Creating a page

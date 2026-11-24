@@ -25,7 +25,7 @@
 - compiled and interpreted language
 - Used hybrid model
 
-![alt text](/assets/js-code-runs.png)
+![alt text](../assets/js-code-runs.png)
 
 ### == vs === vs Object.is()
 

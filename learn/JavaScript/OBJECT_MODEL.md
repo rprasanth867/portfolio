@@ -14,7 +14,7 @@
 
 ## Event Propagation -- Captuting -- Bubbling
 
-![alt text](/assets/EventPropagationCapturingBubbling.png)
+![alt text](../assets/EventPropagationCapturingBubbling.png)
 
 
 

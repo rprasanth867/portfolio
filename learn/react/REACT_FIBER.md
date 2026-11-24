@@ -134,7 +134,7 @@ Unlike a traditional tree where a parent node maintains an array of all its chil
 - **Current Tree:** It represents what is currently rendered on the screen.
 - **WorkInProgress Tree:** It is where React prepares all upcoming changes.
 
-<div align="center"><img src="assets/image.png" alt="alt text" style="max-width: 500px; width: 100%;"></div>
+<div align="center"><img src="../assets/image.png" alt="alt text" style="max-width: 500px; width: 100%;"></div>
 
 
 #### **2. The "Alternate" Relationship**
@@ -153,7 +153,7 @@ The transition between these two trees occurs during the **commit phase**:
 *   **Memory Efficiency:** By reusing nodes via the `alternate` property, React saves time on **memory allocation and garbage collection**. It can simply copy key values over from the old objects to the new ones during the next update cycle.
 
 
-![alt text](assets/double-buffering.png)
+![alt text](../assets/double-buffering.png)
 
 
 ### How Fiber Works
