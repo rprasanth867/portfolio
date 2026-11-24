@@ -1,0 +1,51 @@
+
+## Winter ARC challenge
+
+- Frontend
+  - JS (All concepts)
+    - Decorators
+    - Proxy object
+  - React
+    - Architecture
+    - Works behind scenes
+    - Micro fronted
+    - Interview preparation (Scenario based & machine coding problems)
+  - React Native
+    - Architecture (Old & New)
+    - Works behind scenes
+    - Access native functionality
+    - WatermelonDB
+    - How to debug
+    - Manage app updates (backend dependency & normal updates & live updates)
+    - Publish to PlayStore & AppStore
+    - Interview preparation (Scenario based & machine coding problems)
+  - Browser
+    - Architecture
+    - Works behind scenes
+    - Internal parts of a browser
+- Backend
+  - Node.js
+    - Event loop
+    - Cron jobs
+    - Schedulers
+    - Interview preparation (Scenario based)
+  - Core Java (Optional)
+  - Java Spingboot (Optional)
+  - MySQL
+    - Commands
+    - Internals (Howit store & manage & relation)
+    - Interview preparation (Scenario based)
+  - Redis
+    - Commands
+    - Internals (Howit store & manage & relation)
+    - Interview preparation (Scenario based)
+  - MongoDB
+    - Commands
+    - Internals (Howit store & manage & relation)
+    - Interview preparation (Scenario based)
+  - LLD
+  - HLD
+  - DSA
+  - Communication
+    - Sentences (How to say this)
+    - Professional
