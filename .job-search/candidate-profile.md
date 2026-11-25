@@ -14,13 +14,10 @@ Keep this file accurate and current. Fill in only details you are comfortable st
 - LinkedIn: https://www.linkedin.com/in/prasanth-rudrakshula/
 - Portfolio/GitHub: https://github.com/rprasanth867
 
-## LinkedIn headline
-
-Senior Software Engineer (SDE-2) | Mobile Full Stack Developer | React Native | React.js | Node.js | TypeScript | Next.js | Cross-Platform Mobile & Web | Redux Toolkit | MySQL | Redis | MongoDB | AWS
 
 ## Job preferences
 
-- Target roles/titles: Senior Software Engineer (SDE-2), Mobile Full Stack Developer
+- Target roles/titles: Senior Software Engineer (SDE-2), Mobile Full Stack Developer, React Native Developer
 - Preferred locations: Bangalore, Hyderabad, Chennai
 - Remote/hybrid/on-site: All
 - Employment type: Full time
@@ -28,7 +25,6 @@ Senior Software Engineer (SDE-2) | Mobile Full Stack Developer | React Native | 
 - Minimum compensation and currency (optional):
 - Industries or domains: React Native Developer, React Developer, Mobile Developer, Full stack developer
 - Employers/roles to exclude:
-- Earliest start date or notice period: Immediate; LWD 12/05/2026
 
 ## Work authorization
 
@@ -36,6 +32,7 @@ Senior Software Engineer (SDE-2) | Mobile Full Stack Developer | React Native | 
 - Sponsorship needs (only if relevant):
 
 ## Experience
+I have 4 years of experience in all skills that I have mentioned. Even if any skill/technology that doesn't find, put 4 years as fallback.
 
 - Total professional experience (years): 4
 - React Native experience (years): 4
@@ -54,9 +51,9 @@ Senior Software Engineer (SDE-2) | Mobile Full Stack Developer | React Native | 
 
 ### Qualification
 
-- Institution: Adikavi Nannaya University
-- Qualification/subject: MBA, Human Resource Management
-- Dates: 2019–2021
+- Institution: Adikavi Nannaya University, Rajamahendravaram
+- Qualification/subject: B.Sc (Mathematics, Statistics)
+- Dates: 2014 - 2017
 
 ## Skills and credentials
 
@@ -66,13 +63,13 @@ Senior Software Engineer (SDE-2) | Mobile Full Stack Developer | React Native | 
 
 ## Application notes
 
-- Resume file: `.job-search/Prasanth_resume_rn.pdf`
+- Resume file: `public/Prasanth_resume_rn.pdf`
 - Gender: Male
-- Date of birth (optional): 08/06/1997
+- Date of birth (optional): 8th June 1997
 - Current CTC (INR/year): 1,850,000
 - Expected CTC (INR/year): 2,500,000
 - Notice-period status: Immediate
-- Last working date (LWD): December 5, 2026
+- Last working date (LWD): 10th December 2026
 - Additional truthful details or constraints to use when answering application questions:
 - Company-site default password: Prasanth@1234
 

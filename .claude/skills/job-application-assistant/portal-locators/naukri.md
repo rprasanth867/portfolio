@@ -1,43 +1,100 @@
-# Naukri Portal Map
+# Naukri Portal Locators
 
-Reuse the verified selectors below and inspect only mapped areas on future visits. If the live page changes or a reusable selector is missing, verify and update this map before continuing. Prefer stable IDs, automation attributes, accessible roles, and labels; keep job-specific listing content, recruiter questions, and answers out of this reference.
+## Summary
+Naukri.com is India's leading job portal with traditional application forms. Applications require filling out recruiter questionnaires. Resume can be auto-attached or manually uploaded.
 
-## Signed-in job search
+## Auth & Navigation
 
-Page variant: Search homepage and results
+### Sign In Options
+- Login/signup: Standard email/password or Google/LinkedIn SSO
+- Login button: `button[data-qa="login-btn"]` or find "Login" text
+- Google SSO: `button[data-qa="google-login"]`
+- LinkedIn SSO: `button[data-qa="linkedin-login"]`
 
-- Keyword field: role `textbox[name="Enter keyword, designation, or companies"]`
-- Experience field: role `textbox[name="Select experience"]`
-- Location field: role `textbox[name="Enter location"]`
-- Search action: role `button[name="Search"]`
-- Results region: CSS `.cust-job-tuple`; the current results page does not expose a `list[name="Job search results"]` role. Each `.cust-job-tuple` contains a job-title link `a.title`, employer, experience, location, snippet, posting date, and available actions. Validate this class on each visit.
-- Search filters: freshness dropdown `button#filter-freshness` with options `a[data-id="filter-freshness-<days>"]`; sort dropdown `button#filter-sort` with options `a[data-id="filter-sort-p"]` (Recommended), `a[data-id="filter-sort-r"]` (Relevance), and `a[data-id="filter-sort-f"]` (Date). Validate these selectors when using filters.
-- Use: Fill the keyword and location fields, activate Search, inspect only `.cust-job-tuple` cards for fit and application route, then open a matching `a.title` link.
+### Main Navigation (logged-in)
+- Jobs: `a[href*="/job"]` or navigation to job search
+- Resumes: Profile section for resume management
+- My Profile: User profile settings
 
-## Job details and actions
+## Job Listings
 
-Page variant: Job-details page
+### Jobs Page
+- URL: `https://www.naukri.com/jobs-in-bangalore` (replace location/role)
+- Search fields: Various dropdowns and text inputs
 
-- Content region: inspect title, company, experience, location, posted date, openings/applicant count, highlights, description, skills, employment type, and education.
-- Save action: role `button[name="Save"]`
-- Native apply action: role `button[name="Apply"]`
-- External apply action: role `button[name="Apply on company site"]` when present.
-- Use: Inspect listing details and application route. Apply only through Naukri's native Apply action.
+### Job Cards
+- Each job: `.cust-job-tuple` class
+- Job title: `a.title` link
+- Company info: Within job card
+- Apply action: Native application button
 
-## Recruiter questionnaire
+### Search Filters
+- Location filter
+- Keywords filter
+- Experience level filter
+- Salary range filter
 
-Page variant: Questionnaire drawer during application
+## Applications
 
-- Drawer region: CSS `[id$="Drawer"]` (observed generated ID suffix; validate on each visit)
-- Message history: CSS `[id$="Messages"]` scoped to the drawer
-- Response controls: identify the current widget and its options inside the drawer; they vary by job.
-- Continue action: use the visible Save/continue control inside the drawer.
-- Use: Inspect the message history and current response widget only. Discover each job's questions and inputs from this subtree.
+### Apply Button
+- Native apply: `button` with name "Apply"
+- External apply: `button` with name "Apply on company site"
 
-## Verify submission
+### Questionnaire
+- Drawer: `[id$="Drawer"]` (validate generated ID suffix)
+- Messages: `[id$="Messages"]` within drawer
+- Continue: Visible Save/continue control
 
-Page variant: Apply confirmation
+## Messages
 
-- Confirmation page title: `Apply Confirmation`
-- Confirmation content: text `Applied to` followed by the job title
-- Use: Verify the title matches the single submitted listing. If confirmation is absent or ambiguous, do not retry.
+- Conversation tracking from applications
+- Status updates on application progress
+
+## Profile
+
+- Resume upload: Profile settings
+- Update profile details: Edit form sections
+- LinkedIn/GitHub links: External profile sections
+
+## Status Tracking
+
+- Application status accessible via jobs page
+- Confirmation: Look for "Applied" status in toast message or status badge `[data-qa="apply-btn"]` or confirmation banner
+- Email/SMS notifications for updates
+
+## Flow Notes
+
+1. Click "Apply" on job card or job detail page
+2. Questionnaire opens in drawer
+3. Fill required fields (varies by job/recruiter)
+4. Submit application
+5. Track via Messages or status page
+6. Resume auto-attached based on profile settings
+7. Verify submission - Look for "Applied" status confirmation in UI or toast message
+
+## Field-Level Locators
+
+### Login Form
+| Field | Selector |
+|-------|----------|
+| Email input | `input[type="email"]` |
+| Password input | `input[type="password"]` |
+| Login button | `button[type="submit"]` or `button[data-qa="login-btn"]` |
+
+### Questionnaire Form
+| Element | Selector |
+|---------|----------|
+| Text inputs | `input[type="text"]`, `input[type="number"]` |
+| Textarea | `textarea` |
+| Radio buttons | `input[type="radio"]` |
+| Checkboxes | `input[type="checkbox"]` |
+| Dropdown select | `select` |
+| Save/Continue | `button[data-qa="save-btn"]` or button with "Save" text |
+| Submit | `button[data-qa="submit-btn"]` or button with "Submit" text |
+
+### Profile Page
+| Element | Selector |
+|---------|----------|
+| Edit profile button | `button:contains("Edit")` or `a:contains("Edit Profile")` |
+| Resume upload | `input[type="file"]` near resume section |
+| Save changes | `button:contains("Save")` or `button[type="submit"]` |

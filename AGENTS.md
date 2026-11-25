@@ -1,9 +1,21 @@
-<!-- BEGIN:nextjs-agent-rules -->
+# Project Structure
 
-## This is NOT the Next.js you know
+This repository is a combination of:
 
-This version has breaking changes — APIs, conventions, and file structure may all differ from your training data. Read the relevant guide in `node_modules/next/dist/docs/` (resolved from this file's directory; in monorepos the `next` package may not be visible from the repo root) before writing any code. Heed deprecation notices.
+1. **Portfolio** - Main portfolio site
+2. **Learn** - Notes rendered under `/notes` route in the portfolio
+3. **Online Job Applications** - Job application tracking and management
 
-This block is written and re-added by `next dev` — verify at `node_modules/next/dist/server/lib/generate-agent-files.js`. Removing it from a diff only re-creates the uncommitted change; committing it with your work keeps the tree clean.
+## Important Distinctions
 
-<!-- END:nextjs-agent-rules -->
+- **Learn (notes) are rendered in portfolio under `/notes` route**. Expect that there is **no connection between Learn and portfolio components**.
+- **Everything should be isolated**. When working on:
+  - **Portfolio**: Consider only portfolio-related files and routes
+  - **Learn**: Consider only the notes/learning materials
+  - **Job Applications**: Consider only job application files and data
+
+## Isolation Boundaries
+
+- Portfolio changes should not affect job application workflows
+- Learn/note content is independent of portfolio rendering logic
+- Job applications are handled through dedicated tools and data files
