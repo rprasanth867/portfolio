@@ -13,9 +13,10 @@ export const personalInfo = {
   employmentType: "full-time",
   roles: [
     "Senior Software Engineer (SDE-2)",
-    "Mobile Full Stack Developer",
-    "React Native Developer",
-    "React.js Developer"
+    "Frontend Developer",
+    "React.js Developer",
+    "Web Developer",
+    "Full Stack Developer",
   ],
   tagline: "Senior Software Engineer with 4+ years of experience architecting and delivering high-performance web and mobile applications using React, React Native, Next.js, TypeScript, and Redux Toolkit. Specialized in building reusable Design System Libraries (NPM packages), cross-platform application architectures, and low-latency real-time communications (WebSockets, XMPP). Proven track record of optimizing application performance, enforcing strict security standards, and delivering enterprise-grade full-stack solutions with lightweight Node.js/Express backends.",
   location: "Bangalore, India",
@@ -27,29 +28,33 @@ export const personalInfo = {
   linkedinUrl: "https://www.linkedin.com/in/prasanth-rudrakshula/",
   emailUrl: "mailto:rprasanth867@gmail.com",
   phoneUrl: "tel:+919985702662",
-  resumeUrl: "/Prasanth_resume_rn.pdf",
-  resumeFileName: "Prasanth_resume_rn.pdf",
+  resumeUrl: "/Prasanth_resume.pdf",
+  resumeFileName: "Prasanth_resume.pdf",
   availability: "Available for new opportunities",
   about: "I build mobile and web products with React Native, React, Next.js, and Node.js, with a focus on reusable architecture, fast experiences, and reliable real-time communication.",
   aboutDetails: [
-    "At Nouveau Labs, I built and maintained a React Native design system with more than 30 reusable components used across five or more enterprise apps. I also improved app startup time by 35% through Hermes migration, lazy loading, and code splitting.",
-    "I have delivered cross-platform messaging and offline-first experiences using WebSockets, XMPP, Server-Sent Events, polling, and WatermelonDB. My work includes background sync, responsive state management, and secure session and local storage flows.",
-    "I also build full-stack web features and Node.js/Express REST APIs, including authentication with JWT, OAuth 2.0, API keys, SSO, and role-based access control. I take features through design, implementation, testing, review, deployment, and production support."
+    "Built a reusable Design System Library (NPM package) with 30+ UI components, enabling consistent UI development across 5+ enterprise applications and reducing duplicate implementation effort.",
+    "Engineered cross-platform messaging modules using WebSockets, XMPP, SSE, long polling, and short polling for low-latency real-time communication.",
+    "Built offline-first messaging for Contact-center application using WatermelonDB with seamless background sync and offline support.",
+    "Designed authentication workflows using JWT, OAuth 2.0, API Keys, SDK Keys, SSO, and RBAC for secure user and service authentication.",
+    "Architected REST APIs with Node.js, Express.js, and MySQL, and built SEO-optimized landing pages using Next.js with SSR."
   ],
   focusAreas: [
+    "React.js",
+    "Next.js",
     "React Native",
-    "Cross-platform apps",
-    "Design systems",
+    "Design Systems",
     "Real-time messaging",
-    "React & Next.js",
-    "Node.js APIs",
-    "Application performance"
+    "REST APIs",
+    "TypeScript",
+    "Authentication (JWT, OAuth 2.0, SSO)",
+    "AI Tools (CopilotKit, MCP, Skills, Rules)"
   ],
   stats: [
     { label: "Years of experience", value: "4+" },
     { label: "Reusable UI components", value: "30+" },
     { label: "Enterprise apps using design system", value: "5+" },
-    { label: "Faster app startup", value: "35%" }
+    { label: "Awards", value: "Rising Star (2024), Star (2025)" }
   ]
 };
 
@@ -90,7 +95,7 @@ export const experience = [
           "Built an SEO-friendly landing page using Next.js, server-side rendering, and metadata optimization.",
           "Improved application performance through lazy loading, code splitting, memoization, and render optimization; contributed to testing, code reviews, debugging, and production support."
         ],
-        technologies: ["React Native", "React.js", "TypeScript", "WatermelonDB", "WebSockets", "XMPP", "SSE", "Node.js", "Express.js", "MySQL", "Redux Toolkit", "Ant Design", "MUI", "Storybook", "NPM", "i18n"]
+        technologies: ["React Native", "React.js", "TypeScript", "MUI", "Storybook", "NPM", "i18n", "WatermelonDB", "WebSockets", "XMPP", "SSE", "Long Polling", "Short Polling", "Node.js", "Express.js", "MySQL", "JWT", "OAuth 2.0", "API Keys", "SDK Keys", "SSO", "RBAC"]
       }
     ],
   }
@@ -157,6 +162,19 @@ export const projects = [
     ],
     technologies: ["React.js", "Next.js", "Node.js", "Express.js", "MySQL"],
     links: []
+  },
+  {
+    id: "nexus-workspace",
+    featured: false,
+    title: "Nexus Workspace",
+    subtitle: "Enterprise Project Management Platform",
+    description: "Architected a modular React application supporting multi-tenant organizations, RBAC, and project workflows.",
+    points: [
+      "Built with React, TypeScript, Redux Toolkit, TanStack Query, Material UI, Socket.IO",
+      "Optimized performance through lazy loading, code splitting, memoization, caching, and list virtualization"
+    ],
+    technologies: ["React", "TypeScript", "Redux Toolkit", "TanStack Query", "Material UI", "Socket.IO", "Vitest", "Playwright"],
+    links: []
   }
 ];
 
@@ -199,7 +217,7 @@ export const stack = [
   {
     id: "ai-tools",
     title: "08 AI Tools",
-    items: ["CopilotKit", "MCP", "Skills", "Claude", "Cursor", "GitHub Copilot"]
+    items: ["CopilotKit", "MCP", "Skills", "Rules", "Claude", "Cursor", "GitHub Copilot"]
   }
 ];
 

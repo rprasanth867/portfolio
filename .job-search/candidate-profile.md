@@ -17,13 +17,13 @@ Keep this file accurate and current. Fill in only details you are comfortable st
 
 ## Job preferences
 
-- Target roles/titles: Senior Software Engineer (SDE-2), Mobile Full Stack Developer, React Native Developer
+- Target roles/titles: Frontend Software Engineer, React Developer, Senior React Developer, Next.js Developer
 - Preferred locations: Bangalore, Hyderabad, Chennai
 - Remote/hybrid/on-site: All
 - Employment type: Full time
-- Seniority: SDE-2
+- Seniority: Senior
 - Minimum compensation and currency (optional):
-- Industries or domains: React Native Developer, React Developer, Mobile Developer, Full stack developer
+- Industries or domains: React Developer, Next.js, Frontend Development, Web Development
 - Employers/roles to exclude:
 
 ## Work authorization
@@ -35,8 +35,9 @@ Keep this file accurate and current. Fill in only details you are comfortable st
 I have 4 years of experience in all skills that I have mentioned. Even if any skill/technology that doesn't find, put 4 years as fallback.
 
 - Total professional experience (years): 4
-- React Native experience (years): 4
-- Backend experience (years): 4
+- React experience (years): 4
+- Frontend experience (years): 4
+- Backend experience (years): 2
 
 ### Role 1
 
@@ -44,8 +45,8 @@ I have 4 years of experience in all skills that I have mentioned. Even if any sk
 - Title: Senior Software Engineer (SDE-2)
 - Location: Bangalore, Karnataka
 - Start/end dates: November 2022–Present
-- Responsibilities and accomplishments: Built a shared React Native design system with 30+ components used across 5+ enterprise apps; improved startup time by 35%; developed cross-platform messaging and Node.js/Express APIs.
-- Technologies/tools: React Native, React, Next.js, TypeScript, Redux Toolkit, Node.js, Express, MySQL, Redis, MongoDB, AWS, WebSockets, XMPP
+- Responsibilities and accomplishments: Built a React/Next.js design system with 30+ components used across 5+ enterprise applications; improved page load performance by 35%; developed React-based frontend applications with Next.js and TypeScript; built Node.js/Express REST APIs for frontend data consumption.
+- Technologies/tools: React, Next.js, TypeScript, JavaScript (ES6+), Redux Toolkit, Node.js, Express, MySQL, Redis, MongoDB, AWS (S3, Lambda, API Gateway), WebSockets, XMPP, Responsive Design, Performance Optimization
 
 ## Education
 
@@ -57,13 +58,13 @@ I have 4 years of experience in all skills that I have mentioned. Even if any sk
 
 ## Skills and credentials
 
-- Relevant skills: React Native, React.js, Node.js, TypeScript, Next.js, Redux Toolkit, MySQL, Redis, MongoDB, AWS, cross-platform mobile and web development
+- Relevant skills: React, Next.js, TypeScript, JavaScript (ES6+), HTML5, CSS3, Styled Components, Tailwind CSS, Redux Toolkit, Node.js, Express, REST APIs, GraphQL, MySQL, Redis, MongoDB, AWS (S3, Lambda, API Gateway), Performance Optimization, Responsive Design, Cross-browser compatibility, Git, CI/CD
 - Certifications/licenses (include issuer and date if applicable):
 - Languages:
 
 ## Application notes
 
-- Resume file: `public/Prasanth_resume_rn.pdf`
+- Resume file: `public/Prasanth_resume.pdf`
 - Gender: Male
 - Date of birth (optional): 8th June 1997
 - Current CTC (INR/year): 1,850,000
@@ -75,6 +76,6 @@ I have 4 years of experience in all skills that I have mentioned. Even if any sk
 
 ## Reusable application answers
 
-- How many years of experience do you have in Mobile SDK?: 4 years
+- How many years of experience do you have in React development?: 4 years
 - Preffered Location: Bengaluru, Hyderabad, Chennai
-- Are you comfortable for a face-to-face interview in Bangalore or Trivandrum office?: Yes, Bangalore is fine
+- Are you comfortable for a face-to-face interview in Bangalore office?: Yes, Bangalore is fine

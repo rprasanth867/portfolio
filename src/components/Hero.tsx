@@ -99,9 +99,10 @@ export default function Hero() {
             <div className="term__body mono">
               <div><span className="t-p">$</span> npm run start:prod</div>
               <div className="t-dim">[app] bootstrapping services…</div>
-              <div><span className="t-ok">✓</span> react-native <span className="t-dim">design system · 30+ components</span></div>
+              <div><span className="t-ok">✓</span> reactjs     <span className="t-dim">web apps · 30+ components</span></div>
               <div><span className="t-ok">✓</span> nextjs       <span className="t-dim">SSR · SEO optimized</span></div>
               <div><span className="t-ok">✓</span> nodejs       <span className="t-dim">REST APIs · Express · MySQL</span></div>
+              <div><span className="t-ok">✓</span> react-native <span className="t-dim">cross-platform mobile · offline messaging</span></div>
               <div><span className="t-ok">✓</span> websocket    <span className="t-dim">real-time · XMPP · SSE</span></div>
               <div><span className="t-ok">✓</span> mongodb      <span className="t-dim">document store · indexes ok</span></div>
               <div><span className="t-ok">✓</span> redis        <span className="t-dim">cache · session store</span></div>
